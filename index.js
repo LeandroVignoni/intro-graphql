@@ -11,20 +11,21 @@ const {
 const app = express();
 
 const authors = [
-  { id: 1, name: "J. K. Rowling" },
-  { id: 2, name: "J. R. R. Tolkien" },
-  { id: 3, name: "Brent Weeks" },
+  { id: 1, name: "Gabriel García Márquez" },
+  { id: 2, name: "Mario Vargas Llosa" },
+  { id: 3, name: "Julio Cortazar" },
 ];
 
 const books = [
-  { id: 1, name: "Harry Potter and the Chamber of Secrets", authorId: 1 },
-  { id: 2, name: "Harry Potter and the Prisoner of Azkaban", authorId: 1 },
-  { id: 3, name: "Harry Potter and the Goblet of Fire", authorId: 1 },
-  { id: 4, name: "The Fellowship of the Ring", authorId: 2 },
-  { id: 5, name: "The Two Towers", authorId: 2 },
-  { id: 6, name: "The Return of the King", authorId: 2 },
-  { id: 7, name: "The Way of Shadows", authorId: 3 },
-  { id: 8, name: "Beyond the Shadows", authorId: 3 },
+  { id: 1, name: "Cien años de Soledad", authorId: 1 },
+  { id: 2, name: "El amor en el tiempo del cólera", authorId: 1 },
+  { id: 3, name: "Memorias de mis putas tristes ", authorId: 1 },
+  { id: 4, name: "La ciudad y los perros", authorId: 2 },
+  { id: 5, name: "La tia Julia y el escribidor", authorId: 2 },
+  { id: 6, name: "Travesuras de la niña mala", authorId: 2 },
+  { id: 7, name: "Rayuela", authorId: 3 },
+  { id: 8, name: "Argentina, años de alambradas culturales", authorId: 3 },
+  { id: 9, name: "Antologia", authorId: 3 },
 ];
 
 const BookType = new GraphQLObjectType({
